@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>TechPeru</title>
+ <link rel="stylesheet" href="estilos.css">
+ </head>
+<body>
+
+ <h1 style="font-size: 100px;" >TechPeru</h1>
+  <h1 style="font-size: 30px;">Precisión hoy, tecnología mañana</h1>
+ <form action="mi_servidor">
+  <fieldset>
+   <legend>Datos Personales:</legend>
+   <label for="idPersona">DNI Personal:</label><br/>
+   <input type="text" id="idPersona" name="idPersona" placeholder="Escribe tu DNI"/><br/>
+     <input type="hidden" id="sistema" name="sistema" value="SAP"/>
+   <label for="nombre">Nombre:</label><br/>
+   <input type="text" id="nombre" name="nombre"
+    placeholder="Escribe tu nombre" required="true"/><br/>
+   <label for="apellido">Apellido:</label><br/>
+   <input type="text" id="apellido" name="apellido"
+    placeholder="Escribe tu apellido" required="true"/><br/>
+   <label for="email">Email:</label><br/>
+   <input type="email" id="email" name="email" placeholder="Escribe tu email"/><br/>
+   <label for="edad">Edad:</label><br/>
+   <input type="number" id="edad" name="edad" placeholder="Escribe tu edad"/><br/>
+   <label>Género</label><br/>
+   <input type="radio" id="femenino" name="genero" value="femenino"/>
+   <label for="femenino">Femenino</label><br/>
+   <input type="radio" id="masculino" name="genero" value="masculino"/>
+   <label for="masculino">Masculino</label><br/> 
+   <div class="LOCATION">
+   <label for="Residencia">¿De que lugar eres?:</label><br/>
+   Departamento<select id="Residencia" name="Residencia">
+    <option value="Amazonas">Amazonas</option>
+    <option value="Áncash">Áncash</option>
+    <option value="Apurímac">Apurímac</option>
+    <option value="Arequipa">Arequipa</option>
+    <option value="Ayacucho">Ayacucho</option>
+    <option value="Cajamarca">Cajamarca</option>
+    <option value="Cusco">Cusco</option>
+    <option value="Huancavelica">Huancavelica</option>
+    <option value="Huánuco">Huánuco</option>
+    <option value="Ica">Ica</option>
+    <option value="Junín">Junín</option>
+    <option value="La Libertad">La Libertad</option>
+    <option value="Lambayeque">Lambayeque</option>
+    <option value="Lima">Lima</option>
+    <option value="Loreto">Loreto</option>
+    <option value="Madre de Dios">Madre de Dios</option>
+    <option value="Moquegua">Moquegua</option>
+    <option value="Pasco">Pasco</option>
+    <option value="Piura">Piura</option>
+    <option value="Puno">Puno</option>
+    <option value="San Martín">San Martín</option>
+    <option value="Tacna">Tacna</option>
+    <option value="Tumbes">Tumbes</option>
+    <option value="Ucayali">Ucayali</option>
+    <option value="Selecciona" selected="false">Selecciona</option>
+   </select><br/></div>
+   <label>¿Como nos conoces?:</label><br/>
+   <input type="checkbox" id="YouTube" name="Redes Sociales" value="YouTube"/>
+   <label for="YouTube">YouTube</label><br/>
+   <input type="checkbox" id="Telegram" name="Redes Sociales" value="Telegram"/>
+   <label for="Telegram">Telegram</label><br/>
+   <input type="checkbox" id="Instagram" name="Redes Sociales" value="Instagram"/>
+   <label for="Instagram">Instagram</label><br/>
+   <input type="checkbox" id="X (Twitter)" name="Redes Sociales" value="X (Twitter)"/>
+   <label for="X (Twitter)">X (Twitter)</label><br/>
+   <input type="checkbox" id="Otros" name="Redes Sociales" value="Otros"/>
+   <label for="Otros">Otros</label><br/>
+   <label for="comentario">Comentario:</label><br/>
+   <textarea id="comentario" name="comentario" rows="2" cols="30" placeholder="Comentanos más">
+   </textarea><br/>
+   <br/>
+   <input type="submit" value="Enviar"/>
+   <input type="submit" formnovalidate="formnovalidate"
+    value="Enviar sin validar"/>
+   <input type="reset" value="Restablecer"/>
+  </fieldset> 
+ </form>
+</body>
+</html>
